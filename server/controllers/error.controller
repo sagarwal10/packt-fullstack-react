@@ -1,0 +1,8 @@
+
+let errorHandler = {
+  getErrorMessage: function(str) {
+    return str;
+  }
+}
+
+export default errorHandler;
