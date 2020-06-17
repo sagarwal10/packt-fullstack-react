@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "development": "nodemon",
     "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+    "buildserver": "webpack --mode=production --config webpack.config.server.js",
     "start": "NODE_ENV=production node ./dist/server.generated.js"
   },
   "author": "",
@@ -15,9 +16,13 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.0",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "webpack": "^4.42.1",
+    "file-loader": "^6.0.0",
+    "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-hot-middleware": "^2.25.0",
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
@@ -30,7 +35,14 @@
     "helmet": "^3.22.0",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.15",
+    "material-ui": "^1.0.0-beta.43",
+    "material-ui-icons": "^1.0.0-beta.36",
     "mongoose": "^5.9.7",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hot-loader": "^4.12.21",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
   }
 }
