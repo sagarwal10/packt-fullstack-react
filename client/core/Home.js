@@ -4,6 +4,7 @@ import { withStyles } from 'material-ui/styles';
 import Card, { CardContent, CardMedia } from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
 import oceanimg from './../assets/images/ocean.jpg';
+import { Link } from 'react-router-dom';
 
 const styles = theme => ({
   card: {
@@ -33,6 +34,7 @@ class Home extends Component {
           <CardContent>
             <Typography type="body1" component="p">
    	      Welcome to the MERN Home page
+	      <Link to="/users">Users</Link>
 	    </Typography>
 	  </CardContent>
 	</Card>

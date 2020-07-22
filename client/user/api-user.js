@@ -38,12 +38,12 @@ const update = (params, credentials, users) => {
     headers: {
      'Accept' : '/application/json',
      'Content-Type': 'application/json',
-     'Authorization' : 'Bearer " + credentials.t
+     'Authorization' : 'Bearer ' + credentials.t
     },
     body: JSON.stringify(user)
   }).then((response) => {
     return response.json()
-  }(.catch((err) => console.log(err));
+  }).catch((err) => console.log(err));
 }
 
 const remove = (params, credentials, users) => {
